@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jazmarie Moncrieft's Jolly Mountain Cat ~ CP-CO-01-fizzbuzz</title>
+  </head>
+  <body>
+    <div data-include="components/header.html"></div>
+    <main id="index-main">
+        <h2>Fizz Buzz, Baby</h2>
+        <h3 id="results">
+        contents will go here</h3>      
+        <h3>
+        <script>
+            console.log("This script is running in the fizzbuzz page.");
+            let output = "1.<br>2.<br>3.<br>...";
+
+            let startNumber = 1;
+            let endNumber = 100;
+            
+            for(let counter = startNumber; counter <= endNumber; counter = counter +1)// or counter ++//
+
+            if(counter % 2 == 0)
+            {
+                output = output + "it's EVEN: "; 
+            }
+
+
+                {
+                    output = output + counter;
+                }
+            document.getElementById("results").innerHTML = output;
+        </script>
+      
+      <img
+        class="team-pic"
+        src="images/profiles/co-team.png"
+        alt="team picture"
+        width="1000"
+        height="600"
+      >
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLinclude.js"></script>
+  </body>
+</html>
