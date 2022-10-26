@@ -23,8 +23,8 @@
 
 
 // 4.   Initialize a variable named "numberOfChoice" with any number
-        let numberOfChoice;
-        numberOfChoice = 5;
+        let numberOfChoice = 5;
+       
 
 
 // 5.   Initialize a variable named "binaryChoice" with any boolean
@@ -51,12 +51,11 @@ const operandTwo = 2
 
 // 10.  Create a variable named "product" and assign it to the value of 
 //      the "numberOfChoice" variable times the "operandTwo" variable
-let numberOfChoice = 3
  var product = numberOfChoice * operandTwo
 
 // 11.  Create a variable named "productOutput" and give it a string value with
 //      the following sentence: "The product is: <answer_here>", ensuring that <answer_here> is your product variable
-let productOutput = "The product is: <product>";
+let productOutput = `The product is: ${product}`;
 
 ///////////////////////
 // TYPE CONVERSIONS! //
