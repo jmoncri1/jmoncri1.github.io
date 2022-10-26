@@ -9,6 +9,10 @@ body {
     color: brown
 }
 
+main {
+    display: block;
+}
+
 dd {
     font-weight: bold;
 }
@@ -64,4 +68,10 @@ table, th, td, tr{
 #brownies {
     background-color: #CBE3E8;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.assignments-menu {
+    margin:auto;
+    max-width: 400px;
+    
 }
