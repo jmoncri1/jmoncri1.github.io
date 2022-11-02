@@ -34,6 +34,16 @@ Because all of this data is relevant to a single applicant, we want to use an ob
 */
 
 //1.    Create an object named "applicant1"
+const applicant1 = {
+    name: "Jim",
+    age: 20,
+    programStatus: "Completed",
+    address: {
+        state: 'MD',
+        city: 'Baltimore',
+        zipCode: 21201
+    }
+};
 
 
 //2.    Add a "name" field to applicant1, and assign it a string value of your choosing
@@ -60,26 +70,27 @@ objects. Let's do that with address
 }
 */
 
+
 ////////////////////////////////////////////
 //SECTION 2: Accessing Data from an Object//
 ////////////////////////////////////////////
 
 //6.    Uncomment the line that properly accesses applicant1's name
-// const applicant1NameA = applicant1.name;
+const applicant1NameA = applicant1.name;
 // const applicant1NameB = 'Kjirsten';
 // const applicant1NameC = applicant1.getName();
 
 
 //7.    Uncomment the line that properly accesses applicant1's age
 //const applicant1AgeA = applicant1.getAge();
-//const applicant1AgeB = applicant1['age'];
+const applicant1AgeB = applicant1['age']
 //const applicant1AgeC = applicant1.Age;
 
 
 //8.    Uncomment the line that properly accesses applicant1's city
 //const applicant1CityA = applicant1.city;
 //const applicant1CityB = applicant1.address;
-//const applicant1CityC = applicant1.address.city;
+const applicant1CityC = applicant1.address.city;
 
 /////////////////////////////////////////////////////
 //SECTION 3: Using object properties in expressions//
@@ -87,22 +98,22 @@ objects. Let's do that with address
 
 //9.    Replace the placeholder string with an expression that returns true if
 //      applicant1's age is greater than or equal to 18.
-let isApplicant1Eligible = 'placeholder';
-
+let isApplicant1Eligible = applicant1.age >= 18;
+ 
 //10.   Using the stubbed out function, "isEligibleApplicant", write code that returns
 //      whether or not the applicant at least 18 years old.
 const isEligibleApplicant = (applicant) => {
-    return false; //Change this logic!
+    return applicant.age >= 18; //Change this logic!
 }
 
 //11.   Replace the placeholder string  with an expression that returns true if
 //      applicant1's programStatus is "Active".
-let isApplicant1Active = 'placeholder';
+let isApplicant1Active = applicant1.programStatus === "Active";
 
 //12.   Using the stubbed out function, "isActiveApplicant", write code that returns
 //      whether or not the applicant is active.
 const isActiveApplicant = (applicant) => {
-    return false;
+    return applicant.programStatus === "Active";
 }
 
 //////////////////////////////////////
@@ -117,16 +128,17 @@ The next series of questions involves interacting with arrays.
 //13.   Given the following array, write code to access the first item
 const vegetables = ['bok choy', 'broccoli', 'brussels sprouts', 'cabbage', 'carrots', 'cauliflower', 'onion'];
 //TODO: Use bracket notation to assign the value of the first item in vegetables to firstVegetable .
-const firstVegetable = vegetables; //This line needs to change
+const firstVegetable = vegetables[0]; //This line needs to change
 
 //14.   Add 'cucumber' to vegetables using the .push array method. 
-
+    vegetables.push("cucumber");
 
 //15.   Make a copy of an array using a for loop and the .push method. The loop has been created for you.
 const copyArray = (array) => {
     const arrayCopy = [];
     for (const item of array) {
         //TODO: push the current item into the array.
+        arrayCopy.push(item);
     }
     return arrayCopy;
 }
@@ -157,7 +169,12 @@ At the end of the array, check the variable that stored the running total.
 const runs = [0, 1, 4]; //This is just an example array that you can use to test your runsScored function
 const runsScored = (innings) => {
     //TODO: instantiate a variable to hold the total runs
-
+    let totalRuns = 0;
+   for(let i = 0; i < innings.length; i++) {
+         totalRuns += innings[i]; 
+    }
+    return totalRuns;
+ 
     //TODO: Loop over the innings
     //TODO: inside of the loop, add the current innings' run total to the totalRuns variable
 
@@ -182,12 +199,29 @@ Push an object to an array
 //      Remember that you already wrote logic to determine if a single applicant
 //      is eligible in the isEligibleApplicant function.
 const filterApplicantsByEligibility = (applicants) => {
-    return []; //TODO: fill in the correct logic for this function
+    let eligibleApplicant = [];
+    for (let i = 0; i < applicants.length; i++) {
+        if (isEligibleApplicant(applicants[i])) {
+            eligibleApplicant.push(applicants[i]);
+        }
+        
+    }
+    return eligibleApplicant; 
+    
+    //TODO: fill in the correct logic for this function
 }
 
 //18.   Given an array of applicants, return an array of active students. Remember
 //      that you already wrote the logic for a single applicant in the 
 //      isActiveApplicant function.
 const filterApplicantsByProgramStatus = (applicants) => {
-    return []; //TODO: fill in the correct logic for this function
+    let activeApplicants = [];
+    for(let i = 0; i < applicants.length; i++) {
+            if (isActiveApplicant(applicants[i])) {
+                activeApplicants.push(applicants[i]);
+            }
+    }
+    return activeApplicants; 
+    
+    //TODO: fill in the correct logic for this function
 }

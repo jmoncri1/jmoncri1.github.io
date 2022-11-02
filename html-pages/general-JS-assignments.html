@@ -12,6 +12,15 @@
   <h1>
     Shorts or No Shorts 
   </h1>
+  <input type="number" id="kelvin" placeholder="Kelvin">;
+  <button onclick="kelvinToFahrenheit()">Click here to see temperature in fahrenheit</button>;
+  <script>
+    function kelvinToFahrenheit() {
+        let temperatureInKelvin = document.getElementById("kelvin").value;
+        temperatureInFarenheit = (temperatureInKelvin - 273.15)*9/5 + 32;
+        document.getElementById("kelvinToFarenheit").innerHTML=temperatureInFarenheit;
+    }
+  </script>
  <p> 
     temparature = prompt("What is the temparature outside?")
 if(temparature >= 80) {
