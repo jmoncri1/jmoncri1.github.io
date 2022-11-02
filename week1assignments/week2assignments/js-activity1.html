@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8/">
+  <link type= "text/css" rel="stylesheet" href="styles/default.css">
+  <title>Jazmarie Moncrieft's Jolly Mountain Cat ~ CP-CO-01-JS-activity1</title>
+</head>
+<body class="js-activity1">
+<h2 id="jsactivity1title">Indigo Night Gear</h2>
+<table id="customer-table">
+    <tr>
+    <th>Customer ID</th>
+    <th>Last name</th>
+    <th>First name</th>
+    <th>Last pruchade quantity</th>
+    <th>Last purchase amount</th>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>Smith</td>
+        <td>Jacob</td>
+        <td>5</td>
+        <td>$50</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Johnson</td>
+        <td>Iris</td>
+        <td>10</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>Perez</td>
+        <td>Javier</td>
+        <td>5</td>
+        <td>$50</td>
+    </tr>
+    <tr>
+        <td>004</td>
+        <td>Thomas</td>
+        <td>Henry</td>
+        <td>20</td>
+        <td>$200</td>
+    </tr>
+    <tr>
+        <td>005</td>
+        <td>Smith</td>
+        <td>Janice</td>
+        <td>10</td>
+        <td>$100</td>
+    </tr>
+</table>
+<script>
+
+  const customers = [ {
+        id: 001,
+        lastName: "Smith",
+        firstName: "Jacob",
+        amount: 5,
+        spent: 50
+    },
+    {
+        id: 002,
+        lastName: "Johnson",
+        firstName: "Iris",
+        amount: 10,
+        spent: 100
+    },
+    {
+        id: 003,
+        lastName: "Perez",
+        firstName: "Javier",
+        amount: 5,
+        spent: 50
+    },
+    {
+        id: 004,
+        lastName: "Thomas",
+        firstName: "Henry",
+        amount: 20,
+        spent: 200
+    },
+    {
+        id: 005,
+        lastName: "Smith",
+        firstName: "Janice",
+        amount: 10,
+        spent: 100
+    }
+    ];
+    function getCustomerInformation(id) {
+        for(let i = 0; i < customers.length; i ++) {
+           if (customers[i].id === id) {
+            const customer = customers[i];
+            console.log(`Your customer's name is:${customer.firstName} ${customer.lastName}. Your customer's amount purchased is: ${customer.amount}. Your customer's amount spent is:$${customer.spent}`);
+           }
+        }
+    }
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+<!--1. The title of the web page must be the company name.
+a. The title should be centered,
+b. The title font should be in the Arial family.
+c. The title color should be blue.
+2. The next section of the website should show a table.
+a. The table must be four columns across
+i. The table must have a border and have delineation between each cell.
+ii. Column 1 should be customer_id.
+iii. Column 2 should be Last Purchase Quantity.
+iv. Column 3 should be Last Purchase Amount (in dollars).
+b. The table must contain a row for every customer.
+i. Each row represents a unique customer
+3. Your manager will present this web page to the investor and expects the investor tol ask
+follow-up questions about the individual customers.
+a. Because it is typically bad-practice to show identifying customer data on the
+website itself, your manager would like to utilize the console log to show the
+investor more details about each customer on demand.
+4. However, your company is so brand new that your manager can only provide you with a
+receipt book that holds the first five customers’ most recent purchases.
+a. id: 001; Last : Smith; First: Jacob; Quantity: 5, Total AMT Purchased: $50
+b. id: 002; Last : Johnson; First: Iris; Quantity: 10, Total AMT Purchased: $100
+c. id: 003; Last : Perez; First: Javier; Quantity: 5, Total AMT Purchased: $50
+d. id: 004; Last : Thomas; First: Henry; Quantity: 20, Total AMT Purchased: $200
+e. id: 005; Last : Smith; First: Janice; Quantity: 10, Total AMT Purchased: $100
+Objective:
+1. Create a website that satisfies the structure and layout criteria described above.
+2. Create an Customer object using Javascript (in your script.js file) that includes the
+following properties:
+a. customer_id
+b. last_name
+c. first_name
+d. last_purchase_quantity
+e. Last_purchase_amount_in_dollars
+3. Write a function that allows your manager to gather more information about any
+customer from your object. Your manager should be able to pass the customer’s id to the
+function in the web page’s console log.
+a. Hint: Your manager must be able to utilize the web page’s console log to return a
+sentence that they will read word for word to describe the requested customer to
+the investor. (For example, if the investor requests more information on customer
+003, your leader should be able to request more information about customer 003
+in the console log.)-->
