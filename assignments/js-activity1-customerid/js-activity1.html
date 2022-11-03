@@ -7,6 +7,10 @@
 </head>
 <body class="js-activity1">
 <h2 id="jsactivity1title">Indigo Night Gear</h2>
+<label for="idInput">Please enter customer ID</label>
+<input id="idInput" type="number" placeholder="customer ID"/>
+<button type="button" onclick="onButtonClick()">Search</button>
+<div id="display"></div>
 <table id="customer-table">
     <tr>
     <th>Customer ID</th>
@@ -51,53 +55,7 @@
         <td>$100</td>
     </tr>
 </table>
-<script>
-
-  const customers = [ {
-        id: 001,
-        lastName: "Smith",
-        firstName: "Jacob",
-        amount: 5,
-        spent: 50
-    },
-    {
-        id: 002,
-        lastName: "Johnson",
-        firstName: "Iris",
-        amount: 10,
-        spent: 100
-    },
-    {
-        id: 003,
-        lastName: "Perez",
-        firstName: "Javier",
-        amount: 5,
-        spent: 50
-    },
-    {
-        id: 004,
-        lastName: "Thomas",
-        firstName: "Henry",
-        amount: 20,
-        spent: 200
-    },
-    {
-        id: 005,
-        lastName: "Smith",
-        firstName: "Janice",
-        amount: 10,
-        spent: 100
-    }
-    ];
-    function getCustomerInformation(id) {
-        for(let i = 0; i < customers.length; i ++) {
-           if (customers[i].id === id) {
-            const customer = customers[i];
-            console.log(`Your customer's name is:${customer.firstName} ${customer.lastName}. Your customer's amount purchased is: ${customer.amount}. Your customer's amount spent is:$${customer.spent}`);
-           }
-        }
-    }
-</script>
+<script src = "js-activity1.js"></script>
 
 </body>
 
