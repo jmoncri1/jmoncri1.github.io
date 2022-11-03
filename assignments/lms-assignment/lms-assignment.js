@@ -91,7 +91,31 @@ const testData = [
     }
   ];
 
-  function onButtonClick() {
+ const dateInput = document.getElementById("dateInput");
+ const dateButton = document.getElementById("dateButton");
+ const display = document.getElementById('display');
+
+ dateButton.addEventListener("click", function() {
+  display.innerHTML = "";
+  let displayArray = [];
+  for(const item of testData) {
+    if(item.submissionDate === dateInput.value) {
+      displayArray.push(item)
+    }
+  }
+  console.log(displayArray)
+  for(const item of displayArray) {
+    display.innerHTML += `Student name: ${item.studentName}<br>Quiz Name: ${item.quizName}<br>Quiz Module: ${item.quizModule}<br>Quiz Score: ${item.quizScore}<br>Student ID: ${item.studentId}<br>Submission Date: ${item.submissionDate}<br><br>`
+  }
+ });
+
+
+
+
+
+
+
+  /*function onButtonClick() {
     const dateInput = document.querySelector("#dateInput").value;
     const displayStudent = getStudentInformation(dateInput);
     document.querySelector("#display").innerText = displayStudent;
@@ -104,4 +128,4 @@ const testData = [
            return student;
        }
     }
-}
+}*/
