@@ -6,3 +6,12 @@ const onAddToDo = (event) => {
     document.querySelector('ul').appendChild(newListItem);
     }
     document.querySelector('button').addEventListener('click', onAddToDo)
+
+    const listItems = document.querySelectorAll('li');
+    const addCompleted = (event) => {
+    event.target.classList.toggle('completed')
+    }
+    for(const li of listItems){
+    li.addEventListener('click', addCompleted)
+    }
+  
