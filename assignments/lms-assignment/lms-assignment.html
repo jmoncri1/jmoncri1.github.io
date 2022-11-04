@@ -10,9 +10,21 @@
     <h2>You University</h2>
 <h3 text-align: "center">Learning Management System</h3>
 <main>
-    <input type="text" id="dateInput" placeholder="Enter Date"></input>
-    <button id="dateButton" type="button" onclick="onButtonClick()">Search</button>
-    <div id="display"></div>
+    <h3>Search by date</h3>
+    <input type="text" id="dateInput" placeholder="M/DD/YYYY"></input>
+    <button id="dateButton" type="button" onclick="onDateButtonClick()">Search</button>
+    <div id="submittedDisplay"></div>
+    <h3 id="headingForUnsubmitted"></h3>
+    <div id="unsubmittedDisplay"></div>
+   
+    <h3>Search by student ID</h3>
+    <input type="number" id="idInput" placeholder="##"></input>
+    <button id="idButton" type="button" onclick="onIdButtonClick()">Search</button>
+    <div id="idDisplay"></div>
+
+    <h3>Average Quiz Grades</h3>
+    <button type="button" id="averageButton" onclick="OnAverageButton()">Click for Average of all quiz scores</button>
+    <div id="displayAverage"></div>
 <p>Your Classes</p>
 <ul>
     <li>History</li>
