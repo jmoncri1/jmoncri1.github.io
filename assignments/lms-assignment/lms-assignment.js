@@ -109,16 +109,16 @@ function onDateButtonClick() {
   console.log(displaySubmittedArray)
   for (const item of displaySubmittedArray) {
     submittedDisplay.innerHTML += `Student name: ${item.studentName}<br>Quiz Name: ${item.quizName}<br>Quiz Module: ${item.quizModule}<br>Quiz Score: ${item.quizScore}<br>Student ID: ${item.studentId}<br>Submission Date: ${item.submissionDate}<hr><br><br>`
-  document.getElementById("headingForUnsubmitted").innerText = `These are the students who have not submitted quizes on that date:`
+    document.getElementById("headingForUnsubmitted").innerText = `These are the students who have not submitted quizes on that date:`
   }
   for (const item of displayUnsubmittedArray) {
     unsubmittedDisplay.innerHTML += `Student name: ${item.studentName}<br>Quiz Name: ${item.quizName}<br>Quiz Module: ${item.quizModule}<br>Quiz Score: ${item.quizScore}<br>Student ID: ${item.studentId}<br>Submission Date: ${item.submissionDate}<hr><br><br>`
   }
 };
 
-function onIdButtonClick(){
-const idInput = document.getElementById("idInput");
-const idDisplay = document.getElementById("idDisplay");
+function onIdButtonClick() {
+  const idInput = document.getElementById("idInput");
+  const idDisplay = document.getElementById("idDisplay");
 
   idDisplay.innerHTML = "";
   let idDisplayArray = [];
@@ -133,19 +133,17 @@ const idDisplay = document.getElementById("idDisplay");
 };
 
 function onAverageButton() {
-  const displayAverage = document.getElementById('displayAverage');
-  for (let number of testData.quizScore) {
-    let sum = sum += number;
+  let sum = 0;
+  for (const module of testData) {
+    sum += module.quizScore
   }
-  let average = sum/testData.length;
+  console.log(sum)
+  let average = (sum / testData.length).toFixed(1);
   console.log(average);
-  displayAverage.innerHTML += `${average}`
+
+document.getElementById('displayAverage').innerText = `The average is: ${average}`;
+
 }
-
-
-
-
-
 
 
 

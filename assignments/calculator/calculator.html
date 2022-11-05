@@ -3,45 +3,38 @@
 
 <head>
     <meta charset="UTF-8/">
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="/styles/default.css">
     <title>Jazmarie Moncrieft's Jolly Mountain Cat ~ <CP-CO-01-Calculator></CP-CO-01-Calculator>
     </title>
 </head>
 
 <body>
     <div data-include="components/header.html"></div>
-
+<main id="calculatorMain">
     <h2 text-align: "center">Calculator</h2>
+    <div id="inputs">
     <input type="number" id="firstInput">
     <br>
     <br>
     <input type="number" id="secondInput">
     <br>
-    <br>
+    <br> 
+    </div>
+    
+    <p id="results"></p> 
 
-    <button type="button" value="1" id="one">1</button>
-    <button type="button" value="2" id="two">2</button>
-    <button type="button" value="3" id="three">3</button>
-    <button type="button" id="add">+</button>
-    <br>
-    <br>
-    <button type="button" value="4" id="four">4</button>
-    <button type="button" value="5" id="five">5</button>
-    <button type="button" value="6" id="six">6</button>
-    <button type="button" id="subtract">-</button>
-    <br>
-    <br>
-    <button type="button" value="7" id="seven">7</button>
-    <button type="button" value="8" id="eight">8</button>
-    <button type="button" value="9" id="nine">9</button>
-    <button type="button" id="multiply">x</button>
-    <br>
-    <br>
-    <button type="button" value=0 id="zero">0</button>
-    <button type="button" id="enter">Enter</button>
-    <button type="button" id="divide">/</button>
-
+    <div id="buttons">
+    <button type="button" class="add">+</button>
+    
+    <button type="button" class="subtract">-</button>
+    
+    <button type="button" class="multiply">x</button>
+    
+    <button type="button" class="divide">/</button>
+    </div>
+</main>
     <script src="calculator.js"></script>
+
 </body>
 
 </html>
