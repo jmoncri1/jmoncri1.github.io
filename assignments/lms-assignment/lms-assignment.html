@@ -9,7 +9,7 @@
     <div data-include="components/header.html"></div>
     <h2>You University</h2>
 <h3 text-align: "center">Learning Management System</h3>
-<main>
+<main id="lmsMain">
     <h3>Search by date</h3>
     <input type="text" id="dateInput" placeholder="M/DD/YYYY"></input>
     <button id="dateButton" type="button" onclick="onDateButtonClick()">Search</button>
@@ -25,6 +25,7 @@
     <h3>Average Quiz Grades</h3>
     <button type="button" id="averageButton" onclick="onAverageButton()">Click for Average of all quiz scores</button>
     <div id="displayAverage"></div>
+    <div id="classStudentList">
 <p>Your Classes</p>
 <ul>
     <li>History</li>
@@ -37,7 +38,7 @@
     <li>Steve Smith</li>
     <li>Dylan Roberts</li>
 </ul>
-
+</div>
 </main>
 <script src="lms-assignment.js"></script>
 </body>
