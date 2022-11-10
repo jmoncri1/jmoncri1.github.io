@@ -5,7 +5,7 @@
  * @param {string} eventType defaults to click, but can be any event type
  */
 const addListener = (id, callback, eventType = 'click') => {
-    document.getElementsByClassName(id).addEventListener(eventType, callback);
+    document.getElementById(id).addEventListener(eventType, callback);
   };
   
   /**
