@@ -15,7 +15,7 @@ const addListener = (id, callback, eventType = 'click') => {
   const onAddWord = e => {
     resetError();
     const wordInput = document.getElementById('new-word');
-  
+  }
     const word = wordInput.innerText.toUpperCase();
   
     if (!isValidWord(word)) {
