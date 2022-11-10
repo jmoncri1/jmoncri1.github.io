@@ -24,10 +24,9 @@ const addListener = (id, callback, eventType = 'click') => {
       writeWordToList(word);
   
       wordInput.value = ''; //Clear input text
-    else {
+    }else {
       wordInput.classList.toggle('error', true); //Add error class to input
-    }
-  };
+    };
   
   /**
    * Handles user clicking create. Will either generate grid or write an error
