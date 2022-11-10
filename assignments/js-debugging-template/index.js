@@ -60,7 +60,7 @@ const addListener = (id, callback, eventType = 'click') => {
    */
   const onEnter = e => {
     if (e.keyCode === 13) {
-      document.getElementById('add-word).click();
+      document.getElementById('add-word').click();
     }
   };
   
