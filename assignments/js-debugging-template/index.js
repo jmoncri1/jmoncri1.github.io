@@ -12,7 +12,7 @@ const addListener = (id, callback, eventType = 'click') => {
    * Adds a word to the word search set up
    * @param {Event} e
    */
-  const onAddWord = e => {
+  const onAddWord = (e) => {
     resetError();
     const wordInput = document.getElementById('new-word');
   }
