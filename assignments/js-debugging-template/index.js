@@ -15,7 +15,7 @@ const addListener = (id, callback, eventType = 'click') => {
   const onAddWord = (e) => 
     resetError();
     const wordInput = document.getElementById('new-word');
-  
+    const isValidWord = ();
     const word = wordInput.innerText.toUpperCase();
   
     if (!isValidWord(word)) {
@@ -75,7 +75,7 @@ const addListener = (id, callback, eventType = 'click') => {
     const words = getWordList();
     return (
       !/[^A-Z]/.test(word) && //Only text
-      word.length > 3 && //Word length at least 3
+      word.length => 3 && //Word length at least 3
       !words.includes(word)
     ); //Not allowing duplicates
   };
