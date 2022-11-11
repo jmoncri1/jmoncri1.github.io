@@ -1,0 +1,206 @@
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-1)
+
+$ git log
+
+commit 02f18c829fad3fadcac4a8c65a359c45ac7dd10f (HEAD -> paragraph-1)
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 00:12:37 2022 -0500
+
+
+
+    change OUTCOMES to outcomes
+
+
+
+commit 30eb19978e6bdbff018e11420eec6a0f86205ee0
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 00:11:26 2022 -0500
+
+
+
+    change ACCELERATES to accelerates
+
+
+
+commit acf025e65c6ce7d57c9fd338060dda086bf2b62e
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 00:09:37 2022 -0500
+
+
+
+    change TALENT to talent
+
+
+
+commit 82c52e15acbb284107eaa06d4d0f654aeafda8a4
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Wed Nov 9 23:55:06 2022 -0500
+
+
+
+    change DIVERSE to diverse
+
+
+
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-1)
+
+$ git switch paragraph-2
+
+Switched to branch 'paragraph-2'
+
+
+
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-2)
+
+$ git log
+
+commit f82d4fa0eb82b9ef105365c843070596ad8d0d45 (HEAD -> paragraph-2)
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:30:31 2022 -0500
+
+
+
+    change KEEP to keep
+
+
+
+commit b7a45bf9070b3faa9324c5cd02c36e1c354f8175
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:29:33 2022 -0500
+
+
+
+    change TALENT to talent
+
+
+
+commit af55dbf8bc3fe52544f6d2a5d1991834719ae9d7
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:27:49 2022 -0500
+
+
+
+    change COMPANIES to conpanies
+
+
+
+commit 02f18c829fad3fadcac4a8c65a359c45ac7dd10f (paragraph-1)
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 00:12:37 2022 -0500
+
+
+
+    change OUTCOMES to outcomes
+
+
+
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-2)
+
+$ git switch paragraph-3
+
+Switched to branch 'paragraph-3'
+
+
+
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-3)
+
+$ git log
+
+commit 4320aa746c5fab65fb8bcb0e6dac189d4fa72ad1 (HEAD -> paragraph-3)
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:43:32 2022 -0500
+
+
+
+    changed ABILITY to ability
+
+
+
+commit c996adca85330cdedf113e4aa3fc0acd66d1760b
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:42:43 2022 -0500
+
+
+
+    changed FIELD to field
+
+
+
+commit 77659d3c9ae22f65b457a9c08a9a3ee8e68a5947
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:41:58 2022 -0500
+
+
+
+    changed POPULATION to population
+
+
+
+commit 44b1dba0d83ff8b8c2fc558698c59b3acfa0d77b
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:39:20 2022 -0500
+
+
+
+    PROPOSED to proposed
+
+
+
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-3)
+
+$ git switch paragraph-4
+
+Switched to branch 'paragraph-4'
+
+
+
+jmoncri1@LT5100-LT15 MINGW64 ~/desktop/git-workflow-exercise (paragraph-4)
+
+$ git log
+
+commit 42129f1190f68cbea5c415ac75d48ef974a8d692 (HEAD -> paragraph-4, master)
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:56:44 2022 -0500
+
+
+
+    changed BUSSINESS to business
+
+
+
+commit 164301e8ce3347e47512a87636ca16a9a877fefa
+
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+
+Date:   Thu Nov 10 02:56:11 2022 -0500
+
+
+
+    changed SUSTAINABLE to sustainable
+

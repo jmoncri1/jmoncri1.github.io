@@ -15,10 +15,10 @@ const addListener = (id, callback, eventType = 'click') => {
   const onAddWord = (e) => 
     resetError();
     const wordInput = document.getElementById('new-word');
-    const isValidWord = ();
-    const word = wordInput.innerText.toUpperCase();
+    
+    const word = wordInput.value.toUpperCase();
   
-    if (!isValidWord(word)) {
+    if (isValidWord(word)) {
       wordInput.classList.toggle('error', false); //Remove error class from input
   
       writeWordToList(word);
@@ -75,11 +75,11 @@ const addListener = (id, callback, eventType = 'click') => {
     const words = getWordList();
     return (
       !/[^A-Z]/.test(word) && //Only text
-      word.length => 3 && //Word length at least 3
+      word.length >= 3 && //Word length at least 3
       !words.includes(word)
     ); //Not allowing duplicates
   };
-  
+
   /**
    * Adds word to word bank, with a trash can icon
    * @param {string} word - word to add to word bank
