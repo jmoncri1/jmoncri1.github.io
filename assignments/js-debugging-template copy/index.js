@@ -12,13 +12,13 @@ const addListener = (id, callback, eventType = 'click') => {
    * Adds a word to the word search set up
    * @param {Event} e
    */
-  const onAddWord = (e) => 
+  const onAddWord = e => {
     resetError();
     const wordInput = document.getElementById('new-word');
-    
+  
     const word = wordInput.value.toUpperCase();
   
-    if (isValidWord(word)) {
+    if (!isValidWord(word)) {
       wordInput.classList.toggle('error', false); //Remove error class from input
   
       writeWordToList(word);
@@ -26,7 +26,9 @@ const addListener = (id, callback, eventType = 'click') => {
       wordInput.value = ''; //Clear input text
     } else {
       wordInput.classList.toggle('error', true); //Add error class to input
-    };
+    }
+  
+  };
   
   /**
    * Handles user clicking create. Will either generate grid or write an error
@@ -38,9 +40,9 @@ const addListener = (id, callback, eventType = 'click') => {
     const height = Number(document.getElementById('height').value);
     const width = Number(document.getElementById('width').value);
   
-    if (isValidWordList(words, width, height)) {
+    if (isValidWordList(word, width, height)) {
       try {
-        generateWordSearch(words, height, width);
+        generateWordSearch(word, height, width);
       } catch (err) {
         //Alert user of issue;
         if (err.message.indexOf('Unable to generate') === -1) {
@@ -75,11 +77,11 @@ const addListener = (id, callback, eventType = 'click') => {
     const words = getWordList();
     return (
       !/[^A-Z]/.test(word) && //Only text
-      word.length >= 3 && //Word length at least 3
+      word.length < 3 && //Word length at least 3
       !words.includes(word)
     ); //Not allowing duplicates
   };
-
+  
   /**
    * Adds word to word bank, with a trash can icon
    * @param {string} word - word to add to word bank
@@ -88,7 +90,7 @@ const addListener = (id, callback, eventType = 'click') => {
     const li = document.createElement('li');
   
     const trashButton = document.createElement('div');
-    trashButton.class.add('icon')
+    trashButton.classList.add('icon')
     let trashIcon = document.createElement('i');
     trashIcon.classList.add('fa', 'fa-trash-alt');
     trashButton.addEventListener('click', deleteWord);
@@ -109,7 +111,7 @@ const addListener = (id, callback, eventType = 'click') => {
    */
   const deleteWord = e => {
     const li = e.currentTarget.parentNode;
-    li.parentNode.remove(li);
+    li.parentNode.removeChild(li);
   };
   
   /**
@@ -118,19 +120,18 @@ const addListener = (id, callback, eventType = 'click') => {
    */
   const getWordList = () => {
     let words = [];
-    const liElements = getNextWordsContainer().child;
-  
+    const liElements = getNextWordsContainer().children;
     for (const liElement of liElements) {
       words.push(liElement.firstChild.innerText);
-    }
+    };
   
-    return liElements;
+    return words;
   };
   
   /**
    * Helper method to get the word bank
    */
-  const getNextWordsContainer = () => document.getElementById('next-words');
+  const getNextWordsContainer = () => document.getElementById('next-word-list');
   
   ////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////

@@ -1,3 +1,54 @@
+Error log
+1-Line 15 function did not have a closing bracket. Added on line 27 before else.
+2-Line 65 "add-word" missing quotation
+3- line 8 should be getElementById
+4- line 43 should be word
+5- line 45 should be word
+6- line 89 should be writeWordToList
+7- line 123 child to children
+8- line 135 should have "next-word-list"
+9- line 20 change innertext to value
+10- line 114 change remove to removeChild
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # JS Debugging Exercise
 An elementary school hired you to build a word search generator for them. You built one that met the following requirements:
 * User can specify the width and height of the grid
