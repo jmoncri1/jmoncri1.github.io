@@ -1,0 +1,127 @@
+commit 9a029576c2d69100b43ad85534ac144ad3a4edf4 (HEAD -> paragraph-4, origin/paragraph-4, main)
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:32:37 2022 -0500
+
+    BUSSINESS to bussiness
+
+commit 3df5e5d17c87660cf25de5b67e064a6c59ac2008
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:31:50 2022 -0500
+
+    SUSTAINABLE to sustainable
+
+commit 5a627381d761e2361bc43c434b19ae5ec89dfed6
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:30:57 2022 -0500
+
+    CREATE to create
+
+commit 36e7ddc7dc22b917c330d2a5dee25c8b2b366852
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:30:14 2022 -0500
+
+    CANDIDATES to candidates
+
+commit e5b95d6b0d9f8b4d81d4076269752ffcc461a9bd
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:29:25 2022 -0500
+
+    BIASES to biases
+
+commit f33ddad13881004731d3b66fd0ee8dd7b468cbb5
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:28:41 2022 -0500
+
+    REMOVES to removes
+
+commit 53bfa153c245a7f0d5810c9ef519aafaa1e10dea
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:28:06 2022 -0500
+
+    DATA to data
+
+
+
+commit bda97c28ed88f4b52280b87405ee38069f03ac43 (HEAD -> paragraph-3, origin/paragraph-3)
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:23:08 2022 -0500
+
+    ABILITY to ability
+
+commit 2f974342d68c6e927c537b0f4602c75a2efd8ff6
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:22:24 2022 -0500
+
+    FIELD to field
+
+commit 6400dc36947bab0bbe71a474647a86bd0e3fb775
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:21:42 2022 -0500
+
+    POPULATIONS to populations
+
+commit bc359cd118610345a4f525c61fa63bc07ce1b3e7
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:20:59 2022 -0500
+
+    PROPOPSED to proposed
+
+commit 2d7965dbb35439961b56f790838f2971530b2b50
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:20:28 2022 -0500
+
+    FELLOW to fellow
+
+commit 0c6e63485dec9c0b35dacf55882d645856f2f6f8
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 21:19:57 2022 -0500
+
+    CATALYTE to Catalyte
+
+
+commit d26046bce76288d489e112b49f6928c3753e5d46 (HEAD -> paragraph-2, origin/paragraph-2)
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:34:57 2022 -0500
+
+    TALENT to talent
+
+commit 49e1d7a9b3cba71f29e2e310e63fe5ba4265f972
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:34:03 2022 -0500
+
+    KEEP to keep
+
+commit 5bab9698d3aededbeb966a4fe391a9e7dbd6f6bf
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:33:31 2022 -0500
+
+    COMPANIES to companies
+
+
+commit 866aaaceeae71c64b7dddd8c893b07baa4e0e945 (HEAD -> paragraph-1, origin/paragraph-1)
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:30:41 2022 -0500
+
+    OUTCOMES to outcomes
+
+commit 3e1980460bf4b0ff84cd72ae4b4d26ab975f93c0
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:29:54 2022 -0500
+
+    ACCELERATES to accelerates
+
+commit e8f36880498a78ea6be2e00bdc1fa23fd4ec99f2
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:29:04 2022 -0500
+
+    TALENT to talent
+
+commit 4d32114e3f460efc86fbe6f0e528ec3c47e90aee
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:28:07 2022 -0500
+
+    DIVERSE to diverse
+
+commit 5bffbdd163b755d570a333b1493fbac0fbff8f38 (origin/main, origin/HEAD)
+Author: jmoncri1 <113453183+jmoncri1@users.noreply.github.com>
+Date:   Fri Nov 11 17:22:12 2022 -0500
