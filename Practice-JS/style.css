@@ -1,1 +1,20 @@
-#grandparent 
+#grandparent {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#parent {
+    background-color: blue;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+#child {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
