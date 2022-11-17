@@ -7,9 +7,11 @@
 </head>
 <body class="js-activity1">
 <h2 id="jsactivity1title">Indigo Night Gear</h2>
-<label for="idInput">Please enter customer ID</label>
-<input id="idInput" type="number" placeholder="customer ID">
-<button type="button" onclick="onButtonClick()">Search</button>
+<div id="idInputAndButton">
+    <label for="idInput">Please enter customer ID</label>
+    <input id="idInput" type="number" placeholder="customer ID">
+    <button id="customerIdButton" type="button" onclick="onButtonClick()">Search</button>
+</div>
 <div id="display"></div>
 <table id="customer-table">
     <tr>

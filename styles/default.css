@@ -20,7 +20,7 @@ dd {
     font-weight: bold;
 }
 
-img, figcaption, h1, h2, team-list, header, footer, #top-of-page, #catalyte_website, figure, h3, #recipe_picture, #brownie-footer, #results, #inputs, #buttons {
+img, figcaption, h1, h2, team-list, header, footer, #idInputAndButton, #top-of-page, #catalyte_website, figure, h3, #recipe_picture, #brownie-footer, #results, #inputs, #buttons {
     text-align: center;
     color:crimson;
 }
@@ -39,7 +39,7 @@ a:hover {
 }
 table, th, td, tr{
     border: 1px solid black;
-    padding: 4px 6px 4px 6px;
+    padding: 10px 12px 10px 12px;
 }
 
 #calculatorMain {
