@@ -12,13 +12,14 @@ for (const form of document.getElementsByTagName("form")) {
         const inputs = form.getElementsByTagName("input")
 
         for (const input of inputs) {
-            // if (!input.classList.contains("required") && input.value.trim().length == 0) {
-            // }
+             if (!input.classList.contains("required") && input.value.trim().length == 0) {
+             }
+             else {
             //regex checks for spaces/whitespace
             if (input.classList.contains("required") && !input.classList.contains("required_size") && input.value.trim().length === 0) {
                 errors.push("Required fields must have a value that is not empty or whitespace.");
 
-            }
+            } else { }
 
             //(regex) if the input is within the classes labeled "alphabetic" and any of the characters in the input are not letters a-z, error message shows
             if (input.classList.contains("alphabetic") && !/[A-za-z]/.test(input.value)) {
@@ -35,7 +36,7 @@ for (const form of document.getElementsByTagName("form")) {
             }
 
             if (input.classList.contains("username") && input.value.length < 8) {
-                errors.push("Username fields must contain at least 8 characters");
+                errors.push("Username fields must contain at least 8 characters.");
                 continue
             }
 
