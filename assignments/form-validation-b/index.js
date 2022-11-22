@@ -12,10 +12,10 @@ for (const form of document.getElementsByTagName("form")) {
         const inputs = form.getElementsByTagName("input")
 
         for (const input of inputs) {
-            if (!input.classList.contains("required") && input.value.trim().length == 0) {
-            }
-            //regex checks for spaces/whiutespace
-            if (input.classList.contains("required") && input.value.trim().length < 1 | /\s/.test(input.value)) {
+            // if (!input.classList.contains("required") && input.value.trim().length == 0) {
+            // }
+            //regex checks for spaces/whitespace
+            if (input.classList.contains("required") && !input.classList.contains("required_size") && input.value.trim().length === 0) {
                 errors.push("Required fields must have a value that is not empty or whitespace.");
 
             }
@@ -30,7 +30,7 @@ for (const form of document.getElementsByTagName("form")) {
                 errors.push("Numeric fields must be a series of numbers.");
             }
 
-            if (input.classList.contains("required_size") && input.value.length < input.minLength) {
+            if (input.classList.contains("required_size") && input.value.length !== input.minLength) {
                 errors.push("Required_size field lengths must exactly match the minlength attribute of that field.");
             }
 
