@@ -81,8 +81,3 @@ for (const form of document.getElementsByTagName("form")) {
     })
 }
 
-// const firstname = document.getElementById("firstname").value;
-
-// const validate = (e) => {
-//     e.preventDefault();
-// }
