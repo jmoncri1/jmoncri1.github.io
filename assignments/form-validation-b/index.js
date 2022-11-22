@@ -75,25 +75,24 @@ for (const form of document.getElementsByTagName("form"))
                     errors.push("Password fields must contain one or more of each of the following types: uppercase letters, lowercase letters, numbers, special characters.");
                 }
 
-            }//end of for
+            }// end of for
 
             if (errors.length > 0) {
                 event.preventDefault();
                 let finalErrorList = [...new Set(errors)];
                 let errorList = document.createElement("ul");
                 errorList.style = "color:red";
-                for (const error of finalErrorList) {
+                
+            for (const error of finalErrorList) 
+                {
                     const listOfErrors = document.createElement("li");
                     const errorText = document.createTextNode(error);
                     listOfErrors.appendChild(errorText);
                     errorList.appendChild(listOfErrors);
-                }
+                } //end for error
 
                 form.parentNode.querySelector(".errors").appendChild(errorList);
-            }
-        }   
-     
-    })
-
-
-}
+            } // end of else
+        } // end for input
+    }) // end of function
+} // end of for form
