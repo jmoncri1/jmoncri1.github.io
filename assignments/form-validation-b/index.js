@@ -1,9 +1,4 @@
 
-// form has a first name and last name input
-//both are required fields
-//if empty, error message reads: "Required fields must have a value that is not empty or whitespace."
-//must be alphabetic, if not alphabetic, error message reads : "Alphabetic fields must be a series of alphabetic characters."
-
 
 for (const form of document.getElementsByTagName("form")) 
 {
