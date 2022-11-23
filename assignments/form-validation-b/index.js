@@ -57,7 +57,7 @@ const validateForm = (event) =>
             }
 
             //(regex) if the input class is password, and the characters do not contain one or more each uppercase, lowercase, numbers, and special characters.
-            if (input.classList.contains('password') && !/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(input.value)) 
+            if (input.classList.contains('password') && !/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/.test(input.value)) 
             {
                 errors.push("Password fields must contain one or more of each of the following types: uppercase letters, lowercase letters, numbers, special characters.");
             }
