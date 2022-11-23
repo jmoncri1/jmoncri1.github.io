@@ -77,7 +77,7 @@ for (const form of document.getElementsByTagName("form"))
                 }
 
             } // end of else
-
+        }  // end of for
             if (errors.length > 0) {
                 event.preventDefault();
                 let finalErrorList = [...new Set(errors)];
@@ -93,7 +93,6 @@ for (const form of document.getElementsByTagName("form"))
                 } //end for error
 
                 form.parentNode.querySelector(".errors").appendChild(errorList);
-            } // end for
-        } // end for input
+                } // end for input
     }) // end of anonymous function
 } // end for form
