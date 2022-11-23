@@ -1,5 +1,3 @@
-
-
 for (const form of document.getElementsByTagName("form")) 
 {
     form.addEventListener("submit", function (event) 
