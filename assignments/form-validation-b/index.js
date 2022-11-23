@@ -56,11 +56,6 @@ const validateForm = (event) =>
                 errors.push("Phone fields must match the format of XXX-XXX-XXXX.");
             }
 
-            if (input.classList.contains("password") && input.value.length < 8) 
-            {
-                errors.push("password fields must contain at least 8 characters");
-            }
-
             //(regex) if the input class is password, and the characters do not contain one or more each uppercase, lowercase, numbers, and special characters.
             if (input.classList.contains('password') && !/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/.test(input.value)) 
             {
