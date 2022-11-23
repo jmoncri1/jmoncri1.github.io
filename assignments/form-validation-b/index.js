@@ -16,7 +16,7 @@ const validateForm = (event) =>
             }
 
             //(regex) if the input is within the classes labeled "alphabetic" and any of the characters in the input are not letters a-z, error message shows
-            if (input.classList.contains("alphabetic") && !/^[A-za-z]$/.test(input.value)) 
+            if (input.classList.contains("alphabetic") && !/^[A-Za-z]+$/.test(input.value)) 
             {
                 errors.push("Alphabetic fields must be a series of alphabetic characters.");
             }
