@@ -17,7 +17,8 @@ for (const form of document.getElementsByTagName("form"))
         {
             if (!input.classList.contains("required") && input.value.trim().length == 0) {
             }
-            else {
+            else 
+            {
                 //regex checks for spaces/whitespace
                 if (input.classList.contains("required") && !input.classList.contains("required_size") && input.value.trim().length === 0) {
                     errors.push("Required fields must have a value that is not empty or whitespace.");
@@ -43,7 +44,7 @@ for (const form of document.getElementsByTagName("form"))
                 if (input.classList.contains("username") && input.value.length < 8) 
                 {
                     errors.push("Username fields must contain at least 8 characters.");
-                    continue
+                    //continue
                 }
 
                 //(regex) if the class of the input is username and the characters of the input are not eaither 0-9 or a-z, not case sensitive, error message shows
@@ -75,7 +76,7 @@ for (const form of document.getElementsByTagName("form"))
                     errors.push("Password fields must contain one or more of each of the following types: uppercase letters, lowercase letters, numbers, special characters.");
                 }
 
-            }// end of for
+            } // end of else
 
             if (errors.length > 0) {
                 event.preventDefault();
@@ -83,7 +84,7 @@ for (const form of document.getElementsByTagName("form"))
                 let errorList = document.createElement("ul");
                 errorList.style = "color:red";
                 
-            for (const error of finalErrorList) 
+                 for (const error of finalErrorList) 
                 {
                     const listOfErrors = document.createElement("li");
                     const errorText = document.createTextNode(error);
@@ -92,7 +93,7 @@ for (const form of document.getElementsByTagName("form"))
                 } //end for error
 
                 form.parentNode.querySelector(".errors").appendChild(errorList);
-            } // end of else
+            } // end for
         } // end for input
-    }) // end of function
-} // end of for form
+    }) // end of anonymous function
+} // end for form
